@@ -1,0 +1,173 @@
+.epik-page {
+  min-height: 100vh;
+  color: #1e1e1e;
+  background: linear-gradient(180deg, #fff5f5 0%, #ffffff 40%);
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+}
+
+.epik-container {
+  width: min(1120px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.epik-hero {
+  padding: 6.5rem 0 4.5rem;
+}
+
+.epik-badge {
+  display: inline-block;
+  border: 1px solid #e6b2b2;
+  color: #8e1f1f;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.16rem;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.epik-hero h1 {
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  max-width: 17ch;
+}
+
+.epik-hero h1 span {
+  color: #ba2323;
+}
+
+.epik-hero-text {
+  max-width: 72ch;
+  line-height: 1.7;
+  color: #3a3a3a;
+}
+
+.epik-actions {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.epik-btn {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.45rem;
+  padding: 0.8rem 1.35rem;
+  transition: all 0.2s ease;
+}
+
+.epik-btn-primary {
+  background: #ba2323;
+  color: #fff;
+}
+
+.epik-btn-primary:hover {
+  background: #951d1d;
+}
+
+.epik-btn-outline {
+  border: 1px solid #ba2323;
+  color: #ba2323;
+}
+
+.epik-btn-outline:hover {
+  background: rgba(186, 35, 35, 0.08);
+}
+
+.epik-section {
+  padding: 2.4rem 0;
+}
+
+.epik-section h2,
+.epik-cta h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.epik-section p,
+.epik-cta p {
+  max-width: 75ch;
+  line-height: 1.7;
+  color: #444;
+}
+
+.epik-stats,
+.epik-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.epik-stats article,
+.epik-services article {
+  background: #fff;
+  border: 1px solid #f1c7c7;
+  border-radius: 0.7rem;
+  padding: 1.1rem;
+}
+
+.epik-stats strong {
+  display: block;
+  color: #ba2323;
+  font-size: 1.7rem;
+}
+
+.epik-stats span {
+  color: #4e4e4e;
+}
+
+.epik-services h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.epik-services p {
+  margin: 0;
+  color: #444;
+}
+
+.epik-process ol {
+  padding-left: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+.epik-process li {
+  margin-bottom: 0.8rem;
+  line-height: 1.65;
+}
+
+.epik-cta {
+  margin: 2rem auto 3rem;
+  width: min(1120px, calc(100% - 3rem));
+  border-radius: 1rem;
+  background: #ba2323;
+  color: #fff;
+  padding: 2.4rem 0;
+}
+
+.epik-cta p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.epik-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.epik-contact a,
+.epik-contact span {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .epik-hero {
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epik Investment | Yatırım Danışmanlığı</title>
+    <meta
+      name="description"
+      content="Epik Investment için tek sayfalık, kurumsal kırmızı temalı yatırım danışmanlığı web sitesi"
+    />
+    <style>
+      :root {
+        --red-700: #951d1d;
+        --red-600: #ba2323;
+        --red-100: #fff5f5;
+        --red-200: #f1c7c7;
+        --text-900: #1e1e1e;
+        --text-700: #444;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'IBM Plex Sans', Arial, sans-serif;
+        color: var(--text-900);
+        background: linear-gradient(180deg, var(--red-100) 0%, #ffffff 40%);
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 3rem));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 6.5rem 0 4.5rem;
+      }
+
+      .badge {
+        display: inline-block;
+        border: 1px solid #e6b2b2;
+        color: #8e1f1f;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.16rem;
+        padding: 0.4rem 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 5vw, 3.8rem);
+        line-height: 1.1;
+        margin: 0 0 1rem;
+        max-width: 17ch;
+      }
+
+      h1 span {
+        color: var(--red-600);
+      }
+
+      .hero-text,
+      .section p,
+      .cta p {
+        max-width: 75ch;
+        line-height: 1.7;
+        color: var(--text-700);
+      }
+
+      .actions {
+        margin-top: 1.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+      }
+
+      .btn {
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 0.45rem;
+        padding: 0.8rem 1.35rem;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--red-600);
+        color: #fff;
+      }
+
+      .btn-primary:hover {
+        background: var(--red-700);
+      }
+
+      .btn-outline {
+        border: 1px solid var(--red-600);
+        color: var(--red-600);
+      }
+
+      .btn-outline:hover {
+        background: rgba(186, 35, 35, 0.08);
+      }
+
+      .section {
+        padding: 2.4rem 0;
+      }
+
+      h2 {
+        margin: 0 0 0.8rem;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+      }
+
+      .stats,
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1rem;
+        margin-top: 1.4rem;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid var(--red-200);
+        border-radius: 0.7rem;
+        padding: 1.1rem;
+      }
+
+      .stats strong {
+        display: block;
+        color: var(--red-600);
+        font-size: 1.7rem;
+      }
+
+      .stats span {
+        color: #4e4e4e;
+      }
+
+      .services h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.15rem;
+      }
+
+      .services p {
+        margin: 0;
+      }
+
+      .process ol {
+        padding-left: 1.2rem;
+        margin: 1rem 0 0;
+      }
+
+      .process li {
+        margin-bottom: 0.8rem;
+        line-height: 1.65;
+      }
+
+      .cta {
+        margin: 2rem auto 3rem;
+        width: min(1120px, calc(100% - 3rem));
+        border-radius: 1rem;
+        background: var(--red-600);
+        color: #fff;
+        padding: 2.4rem 0;
+      }
+
+      .cta p {
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      .contact a,
+      .contact span {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="badge">EPİK INVESTMENT</p>
+          <h1>
+            Güvenilir, ölçülebilir ve sürdürülebilir
+            <span> yatırım danışmanlığı</span>
+          </h1>
+          <p class="hero-text">
+            Epik Investment, bireysel ve kurumsal yatırımcılar için profesyonel
+            danışmanlık hizmetleri sunar. Piyasa verileri, risk yönetimi ve
+            performans odaklı stratejiler ile sermayenizin sürdürülebilir
+            şekilde büyümesini hedefler.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#iletisim">Ücretsiz Ön Görüşme</a>
+            <a class="btn btn-outline" href="#hizmetler">Hizmetlerimiz</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="hakkimizda">
+        <div class="container">
+          <h2>Neden Epik Investment?</h2>
+          <p>
+            Finansal kararlarınızda yalnızca bugünü değil, orta ve uzun vadeli
+            hedeflerinizi de merkeze alıyoruz. Şeffaf raporlama, düzenli
+            bilgilendirme ve disiplinli portföy yaklaşımımız ile yatırım
+            sürecini güvenle yönetmenizi sağlıyoruz.
+          </p>
+          <div class="stats">
+            <article class="card">
+              <strong>12+ yıl</strong><span>Sektör deneyimi</span>
+            </article>
+            <article class="card">
+              <strong>₺4.2B+</strong><span>Yönetilen varlık</span>
+            </article>
+            <article class="card">
+              <strong>%95</strong><span>Müşteri memnuniyeti</span>
+            </article>
+            <article class="card">
+              <strong>200+</strong><span>Tamamlanan proje</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="hizmetler">
+        <div class="container">
+          <h2>Hizmetlerimiz</h2>
+          <div class="services">
+            <article class="card">
+              <h3>Portföy Yönetimi</h3>
+              <p>
+                Risk profilinize uygun, çeşitlendirilmiş ve performans takipli
+                portföy stratejileri oluşturuyoruz.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Kurumsal Finansman Danışmanlığı</h3>
+              <p>
+                Değerleme, sermaye planlama ve büyüme finansmanı süreçlerinde
+                şirketinize stratejik destek sunuyoruz.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Yatırım Stratejisi ve Araştırma</h3>
+              <p>
+                Makroekonomik veriler ve sektör dinamikleriyle desteklenen
+                analitik yatırım kararları geliştiriyoruz.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="surec">
+        <div class="container">
+          <h2>Çalışma Modelimiz</h2>
+          <ol>
+            <li>
+              <strong>Analiz:</strong> Finansal durumunuz, hedefleriniz ve risk
+              iştahınız detaylı şekilde değerlendirilir.
+            </li>
+            <li>
+              <strong>Strateji:</strong> Size özel yatırım planı ve aksiyon
+              haritası oluşturulur.
+            </li>
+            <li>
+              <strong>Uygulama & İzleme:</strong> Portföy performansı periyodik
+              olarak takip edilir, gerektiğinde revize edilir.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="cta" id="iletisim">
+        <div class="container">
+          <h2>Yatırım hedeflerinizi birlikte büyütelim</h2>
+          <p>
+            Epik Investment uzmanlarıyla iletişime geçin, şirketinize veya
+            kişisel portföyünüze özel bir yatırım yol haritası oluşturalım.
+          </p>
+          <div class="contact">
+            <a href="tel:+902120000000">+90 (212) 000 00 00</a>
+            <a href="mailto:info@epikinvestment.com">info@epikinvestment.com</a>
+            <span>Levent / İstanbul</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
